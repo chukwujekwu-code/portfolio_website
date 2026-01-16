@@ -55,7 +55,7 @@ export interface PersonalInfo {
   location: string;
   bio: string[];
   resumeUrl?: string;
-  avatarUrl?: string;
+  avatarUrl: string;
   socialLinks: SocialLink[];
 }
 
