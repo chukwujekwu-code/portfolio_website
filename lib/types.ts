@@ -66,3 +66,11 @@ export interface Leadership {
   description: string;
   impact: string;
 }
+
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  year: string;
+  description?: string;
+}

@@ -1,4 +1,4 @@
-import { PersonalInfo, Project, SkillCategory, Experience, Education, Leadership } from "./types";
+import { PersonalInfo, Project, SkillCategory, Experience, Education, Leadership, Certification } from "./types";
 
 export const personalInfo: PersonalInfo = {
   name: "Sunday Anah",
@@ -183,23 +183,22 @@ export const education: Education[] = [
     startDate: "2014",
     endDate: "2020",
     description: "Engineering foundation with strong emphasis on analytical thinking and problem-solving. Transitioned to data science during COVID-19, applying quantitative skills to real-world health and business problems."
-  },
+  }
+];
+
+export const certifications: Certification[] = [
   {
-    id: "2",
-    degree: "Microsoft Certified: Fabric Analytics Engineer Associate",
-    institution: "Microsoft",
-    location: "",
-    startDate: "",
-    endDate: "2024",
+    id: "1",
+    name: "Microsoft Certified: Fabric Analytics Engineer Associate",
+    issuer: "Microsoft",
+    year: "2024",
     description: "Professional certification in Microsoft Fabric for enterprise analytics and data engineering."
   },
   {
-    id: "3",
-    degree: "DataCamp Certified: Data Analyst Associate",
-    institution: "DataCamp",
-    location: "",
-    startDate: "",
-    endDate: "2023",
+    id: "2",
+    name: "DataCamp Certified: Data Analyst Associate",
+    issuer: "DataCamp",
+    year: "2023",
     description: "Certification validating proficiency in data analysis, SQL, and Python for analytics."
   }
 ];
