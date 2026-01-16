@@ -12,7 +12,7 @@ export const personalInfo: PersonalInfo = {
     "Beyond my technical work, I volunteer at HerTechTrail, where I've trained over 1,000 women in technology skills across multiple bootcamp cohorts. I believe in building systems that scale, whether that's ML pipelines or people."
   ],
   resumeUrl: "/resume.pdf",
-  avatarUrl: "/images/avatar.jpg",
+  avatarUrl: "/images/my_portrait.png",
   socialLinks: [
     { name: "GitHub", url: "https://github.com/chukwujekwu-code", icon: "github" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/sundayanah/", icon: "linkedin" },
@@ -42,39 +42,21 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "NLP Content Moderation System",
-    description: "Transformer-based content moderation improving detection accuracy by 24% and reducing manual review by 35%.",
-    longDescription: "Production NLP system for community content moderation and sentiment analysis at Chub. Deployed transformer models to analyze user-generated posts and comments, significantly reducing the burden on human moderators while maintaining high accuracy.",
-    technologies: ["Python", "Transformers", "FastAPI", "AWS", "Docker"],
-    githubUrl: "#",
+    title: "Voice AI Intent Classifier",
+    description: "Multilingual intent classification system achieving 97.3% F1 for a Voice AI assistant serving government services in Kinyarwanda, English, and code-switched utterances.",
+    longDescription: "Production-ready intent classification API for a Voice AI assistant helping citizens access government services. Built with LaBSE embeddings for cross-lingual generalization across Kinyarwanda, English, and code-switched speech. Features confidence-based routing to human agents, batch prediction endpoints, and ~50ms inference latency. Classifies 13 intent categories including application status checks, appointment booking, and payment help.",
+    technologies: ["Python", "FastAPI", "LaBSE", "Scikit-learn", "XGBoost", "Jupyter"],
+    githubUrl: "https://github.com/chukwujekwu-code/voice-ai-intent-classifier",
     featured: true
   },
   {
     id: "4",
-    title: "Real-time Recommendation Service",
-    description: "ML-powered habit recommendations with 45% P95 latency reduction through lazy loading, streaming, and caching.",
-    longDescription: "FastAPI microservices architecture serving real-time ML predictions for personalized habit recommendations. Implemented lazy loading, streaming responses, and multi-layer caching strategies to handle peak loads efficiently.",
-    technologies: ["Python", "FastAPI", "AWS Bedrock", "Elasticsearch", "Redis", "Docker"],
-    githubUrl: "#",
+    title: "Sermon Recommender",
+    description: "Semantic search API matching user emotional states to relevant sermons using LLM-powered query expansion and vector search over transcripts.",
+    longDescription: "Full-stack sermon discovery platform that ingests YouTube sermons, transcribes them with Whisper, and enables emotional search. Users describe how they're feeling, and an LLM expands the query into sermon topics before performing vector similarity search. Features multi-channel YouTube sync, automatic transcription fallback, mood-based search categories, and a SvelteKit frontend. Deployed with GitHub Actions for weekly automated updates.",
+    technologies: ["Python", "FastAPI", "SvelteKit", "Qdrant", "MongoDB", "Groq", "FastEmbed", "Whisper"],
+    githubUrl: "https://github.com/chukwujekwu-code/sermon-recommender",
     featured: true
-  },
-  {
-    id: "5",
-    title: "Inventory Forecasting System",
-    description: "Time-series forecasting models that reduced inventory overstock by 18% at TD Africa.",
-    longDescription: "Developed demand forecasting models integrated with Microsoft Dynamics 365 F&O ERP data. Automated extraction pipelines reduced reporting latency from 2 days to 1 hour, while forecasts optimized stock levels across the organization.",
-    technologies: ["Python", "Pandas", "Scikit-learn", "Power BI", "Airflow", "Docker"],
-    githubUrl: "#",
-    featured: false
-  },
-  {
-    id: "6",
-    title: "COVID-19 Analytics Dashboard",
-    description: "Real-time dashboards tracking testing volumes, positivity rates, and demand forecasting during the pandemic.",
-    longDescription: "Built analytics infrastructure at MedBuzz during COVID-19, migrating from Excel to PostgreSQL and creating Power BI dashboards for executives. Forecasting models predicted test kit demand, reducing stockouts and wastage while automated reporting cut manual work by 80%.",
-    technologies: ["Python", "PostgreSQL", "Supabase", "Power BI", "SQL"],
-    githubUrl: "#",
-    featured: false
   }
 ];
 

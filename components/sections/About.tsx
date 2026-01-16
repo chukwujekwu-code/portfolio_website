@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { personalInfo } from "@/lib/data";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { LocationIcon, EmailIcon } from "@/components/icons";
@@ -16,9 +17,14 @@ export function About() {
           <div className="md:col-span-2 flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-card border border-border overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-muted">
-                  <span className="text-6xl">?</span>
-                </div>
+                <Image
+                  src={personalInfo.avatarUrl}
+                  alt={personalInfo.name}
+                  width={288}
+                  height={288}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
               {/* Decorative border */}
               <div className="absolute -bottom-4 -right-4 w-64 h-64 sm:w-72 sm:h-72 rounded-2xl border-2 border-accent -z-10" />
