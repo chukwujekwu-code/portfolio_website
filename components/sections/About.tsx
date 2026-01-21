@@ -58,11 +58,11 @@ export function About() {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-4 pt-6">
               <div className="text-center p-4 rounded-lg bg-card border border-border">
-                <p className="text-2xl font-bold text-accent">5+</p>
+                <p className="text-2xl font-bold text-accent">2+</p>
                 <p className="text-sm text-muted">Years Experience</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-card border border-border">
-                <p className="text-2xl font-bold text-accent">20+</p>
+                <p className="text-2xl font-bold text-accent">10+</p>
                 <p className="text-sm text-muted">Projects Completed</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-card border border-border">
